@@ -63,4 +63,30 @@ hit?
 end
 end 
 end
-  
+
+def runner
+  #setup 
+welcome
+card_total = initial_round
+prompt_user
+input = get_user_input
+until card_total > 21
+  if input == "h"
+  card_total = new_hit(card_total)
+  display_card_total(card_total)
+  elsif input == "s"
+  stay=true
+  else
+    invalid_command
+  end 
+  end
+  if card_total == 21
+    puts "You Drew Blackjack"
+    return "You Win!!"
+  end 
+  if card_total > 21
+    puts "You Bust!"
+    return "You Bust!!"
+  end 
+
+end
