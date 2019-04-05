@@ -77,8 +77,7 @@ until card_total > 21
     return "You Win!!"
   end 
   if card_total > 21
-    puts "You Bust!"
-    return "You Bust!!"
+    puts "Sorry, you hit 30. Thanks for playing!"
   end 
 
 end
