@@ -48,21 +48,13 @@ def invalid_command
     return card_total
 end
 
+def new_hit(card_total)
+card_total+=deal_card
+end 
+
 #####################################################
 # get every test to pass before coding runner below #
 #####################################################
-
-def runner
-welcome
-initial_round
-hit?
-  until (card_total > 21)
-  hit?
-  if card_total > 21
-  end_game
-end
-end 
-end
 
 def runner
   #setup 
